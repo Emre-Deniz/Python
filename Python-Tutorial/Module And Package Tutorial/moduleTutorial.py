@@ -10,3 +10,9 @@ myMainPackageFunc()
 
 from MainPackageFolder.SubPackageFolder import subPackageScripts #or we can use like this 
 subPackageScripts.mySubPackageFunc()
+
+# __name__ is for checking which module or script used right now
+if __name__ =="__main__": # __main__ is means we are in our main running file
+    print("we are using moduleTutorial.py not imported")
+else:
+    print("moduleTutorial.py is imported") 
